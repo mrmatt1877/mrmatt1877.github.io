@@ -1,0 +1,237 @@
+body#grad.container
+  nav.navbar.navbar-inverse.navbar-fixed-top
+    div.container-fluid
+      div.navbar-header
+        a.navbar-brand(href="https://www.dropbox.com/s/ztolzgk26f532lc/Resume.pdf?dl=0") Matthew Robertson
+        button(
+               type="button" 
+               class="navbar-toggle collapsed" 
+               data-toggle="collapse" 
+               data-target="#myNavbar"
+               )
+          span.sr-only Toggle navigation
+          span.icon-bar
+          span.icon-bar
+          span.icon-bar
+      div.navbar-collapse.collapse#myNavbar
+        ul.nav.navbar-nav.navbar-right
+          li.active
+            a(href="#info") About
+          li.nav-item
+            a(href="#skills") Skills
+          li.nav-item
+            a(href="#examples") Examples
+          li.nav-item
+            a(href="#contact") Contact
+            
+  div#splash.splash-background
+    div#animate.col-md-12
+      img(
+        id="old-school"
+        class="img-responsive center-block"
+        src="https://dl.dropboxusercontent.com/s/pz9mvyet6docnmu/finished-logo-trimmed.gif?dl=0"
+        alt="Matthew Robertson Old School Logo"
+      )
+      
+  div#content
+    div#info.row
+      h2 About Me
+      div.horizontal
+        hr
+      div.col-md-6.col-xs-12.text-center
+        img(
+            class="img-responsive center-block lake-picture"
+            src="https://dl.dropboxusercontent.com/s/58t0em2va5ta0lx/1831.JPG?dl=0"
+            alt="Old school logo"
+            height=300
+        )
+      div.col-md-6.col-xs-12.text-pad
+        div.flex-center-vertically.info-text.text-center
+          p I am a front end web developer based in North Carolina. I have been developing websites for a little under a year now. I have built several personal projects such as a connect four game and Wikipedia viewer, but you can check out those and more below. I am currently searching for employment in the area. 
+          p A little about me, when I started my post high school education I began studying as a graphic designer but due to a lack of course offerings, and being young and naive about what my options were, I switched majors to psychology. I graduated in 2012 from the University of North Carolina at Greensboro with my Bachelor of Arts degree. Up until this point I held full and part time employment in a few different tech based jobs, from sales to telecommunication support. I still work for a local electronics repair shop part time despite working for a mental health agency full time. I have always been drawn towards technology this way, but despite knowing how to tear down, fix, and build most modern electronics I had only dabbled in the software side of things.
+          p So, during a lull during one of the holiday breaks, when the clients I work with were on vacation, I decided to learn how to code. See, I am a self taught web developer. I used many different resources during my education including my local bookshop, the public library, and online resources such as freeCodeCamp.  I am still learning everyday and have no problem sitting down to learn a new language, or most commonly jumping in and pushing through it until everything starts to click.
+          p My goals for the future are to become competent in backend languages and possibly to identify myself as a full stack web developer. Currently I am looking for employment as a front end developer with the hope of starting a career and furthering my knowledge. If you have any questions or would like to hire me, you can contact me through email or social media with my info linked below.
+          p Thanks for checking out my portfolio, I look forward to hearing from you!
+      br
+
+
+    div#skills.container-fluid
+      h2 My Skills
+      hr
+      div.logos.row
+        div.html-logo.col-md-4.col-xs-4.logo-pad.img-responsive
+          img(  src="https://dl.dropboxusercontent.com/s/jambhozsjt7yqbi/HTML5_logo_and_wordmark.png?dl=0"
+                alt="HTML logo"
+                height="300")
+
+        div.css3-svg.col-md-4.col-xs-4.logo-pad.img-responsive
+          img(  src="https://dl.dropboxusercontent.com/s/ugr79n5ysaphk8l/CSS3_badge.png?dl=0"
+                alt="CSS3 logo"
+                height="300")
+
+        div.javscript-logo.col-md-4.col-xs-4.logo-pad.img-responsive
+          img(  src="https://dl.dropboxusercontent.com/s/yeymjlbzu536c3e/Javascript%20logo.png?dl=0" 
+                alt="Javascript Logo" 
+                height="300")
+
+      div.list-skills.row
+        div.frameworks.col-xs-15
+          h2 
+            span.break Frame
+            span.break works:
+          p BootStrap
+          p jQuery
+          p Jade
+          p Node.js  
+        div.col-xs-32
+            hr.vertical-line
+        div.languages.col-xs-15
+          h2 
+            span.break Lan
+            span.break guages:
+          p HTML
+          p CSS
+          p Javascript
+        div.col-xs-32
+          hr.vertical-line
+        div.tools.col-xs-15
+          h2 Tools:
+          p Git
+          p GitHub
+          p NPM
+          p Photoshop
+
+    div#examples.row
+      h2.text-center Portfolio
+      div.horizontal
+        hr
+
+      div.sample.col-md-4.col-sm-4.col-xs-12
+        div.container-fluid.sample-box
+          a(href="http://codepen.io/mrmatt1877/pen/aNvYbB")
+            div.screenshot
+              img(
+                  class="img-responsive"
+                  src="https://dl.dropboxusercontent.com/s/mt5hj1vdms83ha4/quote%20generator%20responsive.png?dl=0"
+                  alt="Motivational Quote Generator Screenshot")
+            div.description
+              h4
+                strong Motivational Quote Generator
+              p Delivering motivational quotes that you can share.
+              p Developed using HTML, CSS, Javascript, jQuery
+
+      div.sample.col-md-4.col-sm-4.col-xs-12
+        div.container-fluid.sample-box
+          a(href="http://codepen.io/mrmatt1877/pen/oxwrRM")
+            div.screenshot
+              img(
+                  class="img-responsive"
+                  src="https://dl.dropboxusercontent.com/s/afh9j8ju8u803rz/Calculator%20responsive.png?dl=0"
+                  alt="Calculator Screenshot")
+            div.description
+              h4 
+                strong Calculator
+              p A simple javascript calculator.
+              p Developed using HTML, CSS, Javascript, jQuery
+
+      div.sample.col-md-4.col-sm-4.col-xs-12
+        div.container-fluid.sample-box
+          a(href="http://codepen.io/mrmatt1877/pen/BKQVxa")
+            div.screenshot
+              img(
+                  class="img-responsive"
+                  src="https://dl.dropboxusercontent.com/s/zuhwzzc2jqhu94l/Wiki%20page%20repsonsive.png?dl=0"
+                  alt="Wikipedia Viewer Screenshot")
+            div.description
+              h4 
+                strong Wikipedia Viewer
+              p A Stylish Wikipedia search page.
+              p Developed using HTML, CSS, Javascript, jQuery, wikipedia API
+
+      div.sample.col-md-4.col-sm-4.col-xs-12
+        div.container-fluid.sample-box
+          a(href="http://codepen.io/mrmatt1877/pen/PNBGNP")
+            div.screenshot
+              img(
+                  class="img-responsive"
+                  src="https://dl.dropboxusercontent.com/s/7actgw7i1te4x1y/connect%20four%20responsive.png?dl=0"
+                  alt="Connect Four Screenshot"         
+                  )
+            div.description
+              h4 
+                strong Connect Four
+              p The classic game of Connect Four.
+              p Developed using HTML, CSS, Javascript, jQuery
+
+      div.sample.col-md-4.col-sm-4.col-xs-12
+        div.container-fluid.sample-box
+          a(href="http://codepen.io/mrmatt1877/pen/YqjrOx")
+            div.screenshot
+              img(
+                  class="img-responsive"
+                  src="https://dl.dropboxusercontent.com/s/vvq9nmkd2pfbq3c/simon%20responsive.png?dl=0"
+                  alt="Simon Screenshot"          
+                )
+            div.description
+              h4 
+                strong Simon
+              p Follow the pattern in this game of Simon.
+              p Developed using HTML, CSS, Javascript, jQuery
+
+      div.sample.col-md-4.col-sm-4.col-xs-12
+        div.container-fluid.sample-box
+          a(href="http://codepen.io/mrmatt1877/pen/oxdbXg")
+            div.screenshot
+              img(
+                  class="img-responsive"
+                  src="https://dl.dropboxusercontent.com/s/xc2mt198n78656t/tic%20tac%20toe%20responsive.png?dl=0"
+                  alt="Tic Tac Toe Screenshot"
+                  )
+            div.description
+              h4 
+                strong Tic Tac Toe
+              p Try to get three in a row.
+              p Developed using HTML, CSS, Javascript, jQuery
+
+      div.sample.col-md-4.col-sm-4.col-xs-12.hide
+        div.container-fluid.sample-box
+          a(href="#")
+            div.screenshot
+              img(
+                  class="img-responsive"
+                  src="http://sharonkgilbert.com/wp-content/uploads/2015/12/Under-construction.png"
+                  alt="Screenshot"
+                  )
+            div.description
+              h4 Title
+              p What it does.
+              p Developed using...
+
+
+    div#contact
+      h2 Contact Me:
+      hr
+      div
+        a(href="mailto:matthewebdev@gmail.com")
+          button.btn
+            i.fa.fa-envelope.fa-fw.fa-2x
+            br
+            span Email
+        a(href="https://github.com/mrmatt1877")    
+          button.btn
+            i.fa.fa-github.fa-fw.fa-2x
+            br
+            span GitHub
+        a(href="https://www.freecodecamp.com/mrmatt1877")    
+          button.btn
+            i.fa.fa-fire.fa-fw.fa-2x
+            br
+            span freeCodeCamp
+        a(href="https://www.linkedin.com/in/matthewsrobertson")  
+          button.btn
+            i.fa.fa-linkedin.fa-fw.fa-2x
+            br
+            span linkedIn
+
+    div.footer.text-center
+      h6 Coded by Matthew Robertson

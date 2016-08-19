@@ -1,0 +1,242 @@
+body {
+  color: #000;
+  width: 100%;
+  padding: 0 5%;
+  overflow-x: hidden;
+  text-align: center;
+}
+
+#grad {
+  background: #aaa;
+  background: -webkit-linear-gradient(left top, #aaa, #2661AD);
+  background: -o-linear-gradient(bottom right, #aaa, #2661AD);
+  background: -moz-linear-gradient(bottom right, #aaa, #2661AD);
+  background: linear-gradient(to bottom right, #aaa, #2661AD);
+}
+
+h2 {
+  font-family: "Lobster Two", cursive;
+  font-size: 48px;
+  text-align: center;
+}
+
+a:link {
+  text-decoration: none;
+  color: #000;
+}
+
+.navbar {
+  padding: 0 5%;
+}
+
+#content {
+  background-color: rgba(242, 242, 242, 0.05);
+  width: 100%;
+}
+
+#splash {
+  padding: 10% 0;
+  width: 100%;
+  background: #aaa;
+  background: repeating-linear-gradient(-55deg, #222, #222 5px, #333 5px, #333 10px);
+  height: 26em;
+}
+#splash #animate {
+  position: relative;
+}
+
+#info {
+  padding: 27% 1% 5% 1%;
+}
+#info img {
+  border-radius: 50px;
+  box-shadow: 3px 3px 20px 0.5px #333;
+}
+#info .info-text {
+  color: #424242;
+  font-family: "Reem Kufi", sans-serif;
+  font-size: 16px;
+  height: 730px;
+  padding: 3%;
+  background-color: rgba(242, 242, 242, 0.5);
+  border-radius: 50px;
+  display: inline-block;
+}
+
+#skills {
+  text-align: center;
+  padding: 3%;
+  background: #aaa;
+  background: repeating-linear-gradient(-55deg, #354559, #354559 2px, #212831 2px, #212831 2px);
+}
+
+.logos {
+  padding: 0 0 3% 0;
+}
+.logos img {
+  max-width: 100%;
+}
+
+.logo-pad {
+  padding: 3% 0;
+}
+
+.list-skills {
+  background-color: #777;
+  box-shadow: inset 0 0 2px 2px #333;
+}
+.list-skills .break {
+  display: inline-block;
+}
+.list-skills h2 {
+  font-size: 36px;
+}
+.list-skills p {
+  font-size: 24px;
+  color: #fff;
+  text-shadow: 2px 2px #333;
+}
+
+#examples {
+  padding: 1%;
+  text-align: center;
+}
+#examples .sample {
+  padding: 1%;
+}
+#examples .sample-box {
+  border-style: solid;
+  background-color: #ddd;
+  box-shadow: 2px 2px 20px 0.5px #333;
+}
+#examples .sample-box a {
+  color: #000;
+}
+#examples .screenshot {
+  margin: 0 -14px;
+}
+#examples .screenshot img {
+  height: 350;
+  width: 400;
+}
+#examples .description {
+  display: inline-block;
+  height: 150px;
+}
+
+#contact {
+  text-align: center;
+  padding: 3%;
+}
+#contact button {
+  box-shadow: 3px 3px 10px 0.5px #333;
+  background-color: #ddd;
+}
+
+.footer {
+  color: #f2f2f2;
+  background: #aaa;
+  background: repeating-linear-gradient(-55deg, #222, #222 5px, #333 5px, #333 10px);
+  padding: 10px;
+}
+
+hr {
+  background-color: #39b54a;
+  border: 0;
+  height: 2px;
+  background-image: linear-gradient(to right, transparent, rgba(0, 0, 0, 0.75), transparent);
+}
+
+.horizontal {
+  padding: 0 3.25%;
+}
+
+.vertical-line {
+  width: 3px;
+  height: 15em;
+  position: relative;
+  background-color: #39b54a;
+  border: 0;
+  background-image: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.75), transparent);
+  box-shadow: 0 0 1px 1px #333;
+}
+
+.col-xs-15 {
+  text-align: center;
+  width: 30%;
+  float: left;
+}
+
+.col-xs-32 {
+  text-align: center;
+  width: 5%;
+  float: left;
+}
+
+.container-fluid {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.row {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+#examples {
+  padding: 20px;
+}
+
+@media all and (max-width: 699px) and (min-width: 320px) {
+  #splash {
+    padding: 25% 0 20% 0;
+  }
+
+  .text-pad {
+    padding: 10% 0;
+  }
+
+  .info-text {
+    color: #424242;
+    font-family: "Reem Kufi", sans-serif;
+    font-size: 16px;
+    height: 61em;
+    padding: 5% 0;
+    background-color: rgba(242, 242, 242, 0.5);
+    border-radius: 50px;
+    display: inline-block;
+  }
+
+  #skills {
+    width: 100%;
+    text-align: center;
+    background-color: #777;
+    padding: 20px;
+  }
+
+  .logos {
+    padding: 0 0 3% 0;
+  }
+  .logos img {
+    max-height: 150px;
+    max-width: 100%;
+  }
+
+  .logo-pad {
+    padding: 3% 0;
+  }
+
+  .list-skills h2 {
+    font-size: 24px;
+  }
+  .list-skills p {
+    font-size: 12px;
+  }
+
+  .vertical-line {
+    width: 2px;
+    height: 10em;
+  }
+}
