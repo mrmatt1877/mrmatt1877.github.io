@@ -2,172 +2,380 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>Portfolio</title>
-    <link href="https://fonts.googleapis.com/css?family=Lobster+Two" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/css?family=Reem+Kufi" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-    <script src="https://use.fontawesome.com/933198aed6.js"></script>
-    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matthew Robertson</title>
+    <link type="text/css" rel="stylesheet" href="css/mat.css">
+    <link type="text/css" rel="stylesheet" href="css/style.css">
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   </head>
-  <body id="grad" class="container">
-    <nav class="navbar navbar-inverse navbar-fixed-top">
-      <div class="container-fluid">
-        <div class="navbar-header"><a href="https://www.dropbox.com/s/ztolzgk26f532lc/Resume.pdf?dl=0" class="navbar-brand">Matthew Robertson</a>
-          <button type="button" data-toggle="collapse" data-target="#myNavbar" class="navbar-toggle collapsed"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
-        </div>
-        <div id="myNavbar" class="navbar-collapse collapse">
-          <ul class="nav navbar-nav navbar-right">
-            <li class="active"><a href="#info">About</a></li>
-            <li class="nav-item"><a href="#skills">Skills</a></li>
-            <li class="nav-item"><a href="#examples">Examples</a></li>
-            <li class="nav-item"><a href="#contact">Contact</a></li>
+  <body>
+    <div class="navbar-fixed">
+      <nav class="blue-grey">
+        <div class="nav-wrapper"><a href="#" id="resume" class="brand-logo">Matthew Robertson</a><a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+          <ul class="right hide-on-med-and-down">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#my-work">My Work</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+          <ul id="mobile-demo" class="side-nav">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#my-work">My Work</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
         </div>
-      </div>
-    </nav>
-    <div id="splash" class="splash-background">
-      <div id="animate" class="col-md-12"><img id="old-school" src="https://dl.dropboxusercontent.com/s/pz9mvyet6docnmu/finished-logo-trimmed.gif?dl=0" alt="Matthew Robertson Old School Logo" class="img-responsive center-block"></div>
+      </nav>
     </div>
-    <div id="content">
-      <div id="info" class="row">
-        <h2>About Me</h2>
-        <div class="horizontal">
-          <hr>
+    <div id="hero-img"><img src="img/logo-bg.svg"></div>
+    <div class="container">
+      <div id="about">
+        <h1 class="hide-on-small-only center-align section">About Me</h1>
+        <h3 class="hide-on-med-and-up center-align section">About Me</h3>
+        <div class="divider"></div>
+        <div id="tilt">
+          <h2 class="hide-on-small-only blue-text text-darken-3">Hi, My name is Matthew Robertson!</h2>
+          <h4 class="hide-on-med-and-up blue-text text-darken-3">Hi, My name is Matthew Robertson!</h4>
         </div>
-        <div class="col-md-6 col-xs-12 text-center"><img src="https://dl.dropboxusercontent.com/s/58t0em2va5ta0lx/1831.JPG?dl=0" alt="Matthew Robertson at the Lake" height="300" class="img-responsive center-block lake-picture"></div>
-        <div class="col-md-6 col-xs-12 text-pad">
-          <div class="info-text text-center">
-            <p>I am a front end web developer based in North Carolina. I have been developing websites for a little under a year now. I have built several personal projects such as a connect four game and Wikipedia viewer, but you can check out those and more below. I am currently searching for employment in the area. </p>
-            <p>A little about me, when I started my post high school education I began studying as a graphic designer but due to a lack of course offerings, and being young and naive about what my options were, I switched majors to psychology. I graduated in 2012 from the University of North Carolina at Greensboro with my Bachelor of Arts degree. Up until this point I held full and part time employment in a few different tech based jobs, from sales to telecommunication support. I still work for a local electronics repair shop part time despite working for a mental health agency full time. I have always been drawn towards technology this way, but despite knowing how to tear down, fix, and build most modern electronics I had only dabbled in the software side of things.</p>
-            <p>So, during a lull on one of the holiday breaks, when the clients I work with were on vacation, I decided to learn how to code. See, I am a self taught web developer. I used many different resources during my education including my local bookshop, the public library, and online resources such as freeCodeCamp.  I am still learning everyday and have no problem sitting down to learn a new language, or most commonly jumping in and pushing through it until everything starts to click.</p>
-            <p>My goals for the future are to become competent in backend languages and possibly to identify myself as a full stack web developer. Currently I am looking for employment as a front end developer with the hope of starting a career and furthering my knowledge. If you have any questions or would like to hire me, you can contact me through email or social media with my info linked below.</p>
-            <p>Thanks for checking out my portfolio, I look forward to hearing from you!</p>
-          </div>
-        </div><br>
-      </div>
-      <div id="skills" class="container-fluid">
-        <h2>My Skills</h2>
-        <hr>
-        <div class="logos row">
-          <div class="html-logo col-md-4 col-xs-4 logo-pad img-responsive"><img src="https://dl.dropboxusercontent.com/s/jambhozsjt7yqbi/HTML5_logo_and_wordmark.png?dl=0" alt="HTML logo" height="300"></div>
-          <div class="css3-svg col-md-4 col-xs-4 logo-pad img-responsive"><img src="https://dl.dropboxusercontent.com/s/ugr79n5ysaphk8l/CSS3_badge.png?dl=0" alt="CSS3 logo" height="300"></div>
-          <div class="javscript-logo col-md-4 col-xs-4 logo-pad img-responsive"><img src="https://dl.dropboxusercontent.com/s/yeymjlbzu536c3e/Javascript%20logo.png?dl=0" alt="Javascript Logo" height="300"></div>
-        </div>
-        <div class="list-skills row">
-          <div class="frameworks col-xs-15">
-            <h2> <span class="break">Frame</span><span class="break">works:</span></h2>
-            <p>BootStrap</p>
-            <p>jQuery</p>
-            <p>Jade</p>
-            <p>Node.js  </p>
-          </div>
-          <div class="col-xs-32">
-            <hr class="vertical-line">
-          </div>
-          <div class="languages col-xs-15">
-            <h2> <span class="break">Lan</span><span class="break">guages:</span></h2>
-            <p>HTML</p>
-            <p>CSS</p>
-            <p>Javascript</p>
-          </div>
-          <div class="col-xs-32">
-            <hr class="vertical-line">
-          </div>
-          <div class="tools col-xs-15">
-            <h2>Tools:</h2>
-            <p>Git</p>
-            <p>GitHub</p>
-            <p>NPM</p>
-            <p>Photoshop</p>
-          </div>
+        <div class="section center-align">
+          <p>I am a front end web developer based in North Carolina. I have been developing on the web for about a year now. </p>
+          <p>I have built several personal projects such as a connect four game and Wikipedia viewer, but you can check out those and more below.</p>
+          <p>A graduate of UNCG, my goals for the future are to further my front end and backend programming knowledge with the hopes of building a career.</p><br><img src="img/uncg.png" id="uncg-logo">
+          <p>Thanks for checking out my portfolio, I look forward to hearing from you!</p>
         </div>
       </div>
-      <div id="examples" class="row">
-        <h2 class="text-center">Portfolio</h2>
-        <div class="horizontal">
-          <hr>
+      <div id="skills" class="row">
+        <h1 class="hide-on-small-only center-align section">My Skills</h1>
+        <h3 class="hide-on-med-and-up center-align section">My Skills</h3>
+        <div class="divider"></div>
+        <div class="card row hide-on-med-and-up">
+          <div class="col s6 center-align">
+            <div class="col s12">
+              <h6>HTML</h6>
+              <div class="amber-text text-darken-4"><i class="tiny material-icons center-align">stars</i><i class="tiny material-icons center-align">stars</i><i class="tiny material-icons center-align">stars</i><i class="tiny material-icons center-align">stars</i></div>
+            </div>
+            <div class="col s12">
+              <h6>CSS</h6>
+              <div class="amber-text text-darken-4"><i class="tiny material-icons center-align">stars</i><i class="tiny material-icons center-align">stars</i><i class="tiny material-icons center-align">stars</i><i class="tiny material-icons center-align">stars</i></div>
+            </div>
+            <div class="col s12">
+              <h6>JavaSript</h6>
+              <div class="amber-text text-darken-4"><i class="tiny material-icons center-align">stars</i><i class="tiny material-icons center-align">stars</i><i class="tiny material-icons center-align">stars</i></div>
+            </div>
+            <div class="col s12">
+              <h6>Jade</h6>
+              <div class="amber-text text-darken-4"><i class="tiny material-icons center-align">stars</i><i class="tiny material-icons center-align">stars</i><i class="tiny material-icons center-align">stars</i></div>
+            </div>
+            <div class="col s12">
+              <h6>Git</h6>
+              <div class="amber-text text-darken-4"><i class="tiny material-icons center-align">stars</i><i class="tiny material-icons center-align">stars</i><i class="tiny material-icons center-align">stars</i></div>
+            </div>
+            <div class="col s12">
+              <h6>Node.js</h6>
+              <div class="amber-text text-darken-4"><i class="tiny material-icons center-align">stars</i><i class="tiny material-icons center-align">stars</i></div>
+            </div>
+            <div class="col s12">
+              <h6>Photoshop</h6>
+              <div class="amber-text text-darken-4"><i class="tiny material-icons center-align">stars</i><i class="tiny material-icons center-align">stars</i></div>
+            </div>
+          </div>
+          <div class="col s6 center-align">
+            <div class="col s12">
+              <h6>jQuery</h6>
+              <div class="amber-text text-darken-4"><i class="tiny material-icons center-align">stars</i><i class="tiny material-icons center-align">stars</i><i class="tiny material-icons center-align">stars</i><i class="tiny material-icons center-align">stars</i></div>
+            </div>
+            <div class="col s12">
+              <h6>BootStrap</h6>
+              <div class="amber-text text-darken-4"><i class="tiny material-icons center-align">stars</i><i class="tiny material-icons center-align">stars</i><i class="tiny material-icons center-align">stars</i><i class="tiny material-icons center-align">stars</i></div>
+            </div>
+            <div class="col s12">
+              <h6>Sass</h6>
+              <div class="amber-text text-darken-4"><i class="tiny material-icons center-align">stars</i><i class="tiny material-icons center-align">stars</i><i class="tiny material-icons center-align">stars</i></div>
+            </div>
+            <div class="col s12">
+              <h6>Responsive Design</h6>
+              <div class="amber-text text-darken-4"><i class="tiny material-icons center-align">stars</i><i class="tiny material-icons center-align">stars</i><i class="tiny material-icons center-align">stars</i></div>
+            </div>
+            <div class="col s12">
+              <h6>GitHub</h6>
+              <div class="amber-text text-darken-4"><i class="tiny material-icons center-align">stars</i><i class="tiny material-icons center-align">stars</i><i class="tiny material-icons center-align">stars</i></div>
+            </div>
+            <div class="col s12">
+              <h6>Material Design</h6>
+              <div class="amber-text text-darken-4"><i class="tiny material-icons center-align">stars</i><i class="tiny material-icons center-align">stars</i></div>
+            </div>
+            <div class="col s12">
+              <h6>React</h6>
+              <div class="amber-text text-darken-4"><i class="tiny material-icons center-align">stars      </i></div>
+            </div>
+          </div>
         </div>
-        <div class="sample col-md-4 col-sm-4 col-xs-12">
-          <div class="container-fluid sample-box"><a href="http://codepen.io/mrmatt1877/pen/aNvYbB">
-              <div class="screenshot"><img src="https://dl.dropboxusercontent.com/s/mt5hj1vdms83ha4/quote%20generator%20responsive.png?dl=0" alt="Motivational Quote Generator Screenshot" class="img-responsive"></div>
-              <div class="description">
-                <h4><strong>Motivational Quote Generator</strong></h4>
-                <p>Delivering motivational quotes that you can share.</p>
-                <p>Developed using HTML, CSS, Javascript, jQuery</p>
-              </div></a></div>
-        </div>
-        <div class="sample col-md-4 col-sm-4 col-xs-12">
-          <div class="container-fluid sample-box"><a href="http://codepen.io/mrmatt1877/pen/oxwrRM">
-              <div class="screenshot"><img src="https://dl.dropboxusercontent.com/s/afh9j8ju8u803rz/Calculator%20responsive.png?dl=0" alt="Calculator Screenshot" class="img-responsive"></div>
-              <div class="description">
-                <h4> <strong>Calculator</strong></h4>
-                <p>A simple javascript calculator.</p>
-                <p>Developed using HTML, CSS, Javascript, jQuery</p>
-              </div></a></div>
-        </div>
-        <div class="sample col-md-4 col-sm-4 col-xs-12">
-          <div class="container-fluid sample-box"><a href="http://codepen.io/mrmatt1877/pen/BKQVxa">
-              <div class="screenshot"><img src="https://dl.dropboxusercontent.com/s/zuhwzzc2jqhu94l/Wiki%20page%20repsonsive.png?dl=0" alt="Wikipedia Viewer Screenshot" class="img-responsive"></div>
-              <div class="description">
-                <h4> <strong>Wikipedia Viewer</strong></h4>
-                <p>A Stylish Wikipedia search page.</p>
-                <p>Developed using HTML, CSS, Javascript, jQuery, wikipedia API</p>
-              </div></a></div>
-        </div>
-        <div class="sample col-md-4 col-sm-4 col-xs-12">
-          <div class="container-fluid sample-box"><a href="http://codepen.io/mrmatt1877/pen/PNBGNP">
-              <div class="screenshot"><img src="https://dl.dropboxusercontent.com/s/7actgw7i1te4x1y/connect%20four%20responsive.png?dl=0" alt="Connect Four Screenshot" class="img-responsive"></div>
-              <div class="description">
-                <h4> <strong>Connect Four</strong></h4>
-                <p>The classic game of Connect Four.</p>
-                <p>Developed using HTML, CSS, Javascript, jQuery</p>
-              </div></a></div>
-        </div>
-        <div class="sample col-md-4 col-sm-4 col-xs-12">
-          <div class="container-fluid sample-box"><a href="http://codepen.io/mrmatt1877/pen/YqjrOx">
-              <div class="screenshot"><img src="https://dl.dropboxusercontent.com/s/vvq9nmkd2pfbq3c/simon%20responsive.png?dl=0" alt="Simon Screenshot" class="img-responsive"></div>
-              <div class="description">
-                <h4> <strong>Simon</strong></h4>
-                <p>Follow the pattern in this game of Simon.</p>
-                <p>Developed using HTML, CSS, Javascript, jQuery</p>
-              </div></a></div>
-        </div>
-        <div class="sample col-md-4 col-sm-4 col-xs-12">
-          <div class="container-fluid sample-box"><a href="http://codepen.io/mrmatt1877/pen/oxdbXg">
-              <div class="screenshot"><img src="https://dl.dropboxusercontent.com/s/xc2mt198n78656t/tic%20tac%20toe%20responsive.png?dl=0" alt="Tic Tac Toe Screenshot" class="img-responsive"></div>
-              <div class="description">
-                <h4> <strong>Tic Tac Toe</strong></h4>
-                <p>Try to get three in a row.</p>
-                <p>Developed using HTML, CSS, Javascript, jQuery</p>
-              </div></a></div>
-        </div>
-        <div class="sample col-md-4 col-sm-4 col-xs-12 hide">
-          <div class="container-fluid sample-box"><a href="#">
-              <div class="screenshot"><img src="http://sharonkgilbert.com/wp-content/uploads/2015/12/Under-construction.png" alt="Screenshot" class="img-responsive"></div>
-              <div class="description">
-                <h4>Title</h4>
-                <p>What it does.</p>
-                <p>Developed using...</p>
-              </div></a></div>
+        <div class="hide-on-small-only">
+          <div class="col s12 m6">             
+            <table>
+              <tbody>
+                <tr>
+                  <td>
+                    <h5>HTML</h5>
+                  </td>
+                  <td class="amber-text text-darken-4"><i class="small material-icons">stars</i><i class="small material-icons">stars</i><i class="small material-icons">stars</i><i class="small material-icons">stars</i></td>
+                </tr>
+                <tr>
+                  <td> 
+                    <h5>CSS</h5>
+                  </td>
+                  <td class="amber-text text-darken-4"><i class="small material-icons">stars</i><i class="small material-icons">stars</i><i class="small material-icons">stars</i><i class="small material-icons">stars</i></td>
+                </tr>
+                <tr>
+                  <td> 
+                    <h5>JavaSript</h5>
+                  </td>
+                  <td class="amber-text text-darken-4"><i class="small material-icons">stars</i><i class="small material-icons">stars</i><i class="small material-icons">stars</i></td>
+                </tr>
+                <tr>
+                  <td> 
+                    <h5>Jade</h5>
+                  </td>
+                  <td class="amber-text text-darken-4"><i class="small material-icons">stars</i><i class="small material-icons">stars</i><i class="small material-icons">stars</i></td>
+                </tr>
+                <tr>
+                  <td> 
+                    <h5>Git</h5>
+                  </td>
+                  <td class="amber-text text-darken-4"><i class="small material-icons">stars</i><i class="small material-icons">stars</i><i class="small material-icons">stars</i></td>
+                </tr>
+                <tr>
+                  <td> 
+                    <h5>Node.js</h5>
+                  </td>
+                  <td class="amber-text text-darken-4"><i class="small material-icons">stars</i><i class="small material-icons">stars</i></td>
+                </tr>
+                <tr>
+                  <td> 
+                    <h5>Photoshop</h5>
+                  </td>
+                  <td class="amber-text text-darken-4"><i class="small material-icons">stars</i><i class="small material-icons">stars</i></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="col s12 m6">
+            <table>
+              <tbody>
+                <tr>
+                  <td> 
+                    <h5>jQuery</h5>
+                  </td>
+                  <td class="amber-text text-darken-4"><i class="small material-icons">stars</i><i class="small material-icons">stars</i><i class="small material-icons">stars</i><i class="small material-icons">stars</i></td>
+                </tr>
+                <tr>
+                  <td> 
+                    <h5>BootStrap</h5>
+                  </td>
+                  <td class="amber-text text-darken-4"><i class="small material-icons">stars</i><i class="small material-icons">stars</i><i class="small material-icons">stars</i><i class="small material-icons">stars</i></td>
+                </tr>
+                <tr>
+                  <td> 
+                    <h5>Sass</h5>
+                  </td>
+                  <td class="amber-text text-darken-4"><i class="small material-icons">stars</i><i class="small material-icons">stars</i><i class="small material-icons">stars</i></td>
+                </tr>
+                <tr>
+                  <td> 
+                    <h5>Responsive Design</h5>
+                  </td>
+                  <td class="amber-text text-darken-4"><i class="small material-icons">stars</i><i class="small material-icons">stars</i><i class="small material-icons">stars</i></td>
+                </tr>
+                <tr>
+                  <td> 
+                    <h5>GitHub</h5>
+                  </td>
+                  <td class="amber-text text-darken-4"><i class="small material-icons">stars</i><i class="small material-icons">stars</i><i class="small material-icons">stars</i></td>
+                </tr>
+                <tr>
+                  <td> 
+                    <h5>Material Design</h5>
+                  </td>
+                  <td class="amber-text text-darken-4"><i class="small material-icons">stars</i><i class="small material-icons">stars</i></td>
+                </tr>
+                <tr>
+                  <td> 
+                    <h5>React</h5>
+                  </td>
+                  <td class="amber-text text-darken-4"><i class="small material-icons">stars</i></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
       </div>
-      <div id="contact">
-        <h2>Contact Me:</h2>
-        <hr>
-        <div class="row"><a href="mailto:matthewebdev@gmail.com">
-            <button class="btn"><i class="fa fa-envelope fa-fw fa-2x"></i><br><span>Email</span></button></a><a href="https://github.com/mrmatt1877">   
-            <button class="btn"><i class="fa fa-github fa-fw fa-2x"></i><br><span>GitHub</span></button></a><a href="https://www.freecodecamp.com/mrmatt1877">   
-            <button class="btn"><i class="fa fa-fire fa-fw fa-2x"></i><br><span>freeCodeCamp</span></button></a><a href="https://www.linkedin.com/in/matthewsrobertson"> 
-            <button class="btn"><i class="fa fa-linkedin fa-fw fa-2x"></i><br><span>linkedIn</span></button></a></div>
-      </div>
-      <div class="footer text-center">
-        <h6>Coded by <span class="my-name">Matthew Robertson</span></h6>
+      <div id="my-work" class="row">
+        <h1 class="hide-on-small-only center-align section">What I've Made</h1>
+        <h3 class="hide-on-med-and-up center-align section">What I've Made</h3>
+        <div class="divider"></div>
+        <div class="col s12 m6">
+          <div class="card">
+            <div class="card-image waves-effect waves-block waves-light"><img src="img/tic-tac-toe.png" class="activator"></div>
+            <div class="card-content"><span class="card-title activator grey-text text-darken-4">Tic Tac Toe<i class="material-icons right">more_vert</i></span>
+              <p><a href="http://codepen.io/mrmatt1877/full/oxdbXg" class="blue-text text-darken-4">View the code</a></p>
+            </div>
+            <div class="card-reveal"><span class="card-title activator grey-text text-darken-4">Tic Tac Toe<i class="material-icons right">close</i>
+                <h4>Try to get three in a row, in this classic paper and pencil game.</h4>
+                <p>Designed to be defensive because not being able to win is no fun.</p>
+                <div class="row">
+                  <div class="col s6">
+                    <h6>HTML</h6>
+                    <h6>CSS </h6>
+                    <h6>BootStrap</h6>
+                  </div>
+                  <div class="col s6">
+                    <h6>JavaSript</h6>
+                    <h6>jQuery</h6>
+                  </div>
+                </div></span></div>
+          </div>
+        </div>
+        <div class="col s12 m6">
+          <div class="card">
+            <div class="card-image waves-effect waves-block waves-light"><img src="img/connect-four.png" class="activator"></div>
+            <div class="card-content"><span class="card-title activator grey-text text-darken-4">Connect Four<i class="material-icons right">more_vert</i></span>
+              <p><a href="http://codepen.io/mrmatt1877/full/PNBGNP/" class="blue-text text-darken-4">View the code</a></p>
+            </div>
+            <div class="card-reveal"><span class="card-title activator grey-text text-darken-4">Connect Four<i class="material-icons right">close</i>
+                <h4>The classic board game.</h4>
+                <p>Designed with the color scheme of the original. Built to simulate that old school feel.</p>
+                <div class="row">
+                  <div class="col s6">
+                    <h6>HTML</h6>
+                    <h6>CSS </h6>
+                    <h6>BootStrap</h6>
+                  </div>
+                  <div class="col s6">
+                    <h6>JavaSript</h6>
+                    <h6>jQuery</h6>
+                  </div>
+                </div></span></div>
+          </div>
+        </div>
+        <div class="col s12 m6">
+          <div class="card">
+            <div class="card-image waves-effect waves-block waves-light"><img src="img/simon.png" class="activator"></div>
+            <div class="card-content"><span class="card-title activator grey-text text-darken-4">Simon<i class="material-icons right">more_vert</i></span>
+              <p><a href="http://codepen.io/mrmatt1877/full/YqjrOx" class="blue-text text-darken-4">View the code</a></p>
+            </div>
+            <div class="card-reveal"><span class="card-title activator grey-text text-darken-4">Simon<i class="material-icons right">close</i>
+                <h4>Can you keep up?</h4>
+                <p>Designed with a strict mode where if you miss a beat you fail and a casual mode.</p>
+                <div class="row">
+                  <div class="col s6">
+                    <h6>HTML</h6>
+                    <h6>CSS </h6>
+                    <h6>BootStrap</h6>
+                  </div>
+                  <div class="col s6">
+                    <h6>JavaSript</h6>
+                    <h6>jQuery</h6>
+                  </div>
+                </div></span></div>
+          </div>
+        </div>
+        <div class="col s12 m6">
+          <div class="card">
+            <div class="card-image waves-effect waves-block waves-light"><img src="img/calculator.png" class="activator"></div>
+            <div class="card-content"><span class="card-title activator grey-text text-darken-4">Calculator<i class="material-icons right">more_vert</i></span>
+              <p><a href="http://codepen.io/mrmatt1877/full/oxwrRM" class="blue-text text-darken-4">View the code</a></p>
+            </div>
+            <div class="card-reveal"><span class="card-title activator grey-text text-darken-4">Calculator<i class="material-icons right">close</i>
+                <h4>What else is there to explain?</h4>
+                <p>Designed to do simple computations.</p>
+                <div class="row">
+                  <div class="col s6">
+                    <h6>HTML</h6>
+                    <h6>CSS </h6>
+                    <h6>BootStrap</h6>
+                  </div>
+                  <div class="col s6">
+                    <h6>JavaSript</h6>
+                    <h6>jQuery</h6>
+                  </div>
+                </div></span></div>
+          </div>
+        </div>
+        <div class="col s12 m6">
+          <div class="card">
+            <div class="card-image waves-effect waves-block waves-light"><img src="img/wiki-viewer.png" class="activator"></div>
+            <div class="card-content"><span class="card-title activator grey-text text-darken-4">Wikipedia Viewer<i class="material-icons right">more_vert</i></span>
+              <p><a href="http://codepen.io/mrmatt1877/full/BKQVxa" class="blue-text text-darken-4">View the code</a></p>
+            </div>
+            <div class="card-reveal"><span class="card-title activator grey-text text-darken-4">Wikipedia Viewer<i class="material-icons right">close</i>
+                <h4>A better looking search page for Wikipedia.</h4>
+                <p>When the user inputs their data, a request is made to Wikipedia and the data is returned and beautified.</p>
+                <div class="row">
+                  <div class="col s6">
+                    <h6>HTML</h6>
+                    <h6>CSS </h6>
+                    <h6>BootStrap</h6>
+                    <h6>Wikipedia api</h6>
+                  </div>
+                  <div class="col s6">
+                    <h6>JavaSript</h6>
+                    <h6>jQuery</h6>
+                    <h6>JSON</h6>
+                    <h6>AJAX</h6>
+                  </div>
+                </div></span></div>
+          </div>
+        </div>
+        <div class="col s12 m6">
+          <div class="card">
+            <div class="card-image waves-effect waves-block waves-light"><img src="img/quote-generator.png" class="activator"></div>
+            <div class="card-content"><span class="card-title activator grey-text text-darken-4">Motivational Quote Generator<i class="material-icons right">more_vert</i></span>
+              <p><a href="http://codepen.io/mrmatt1877/full/aNvYbB" class="blue-text text-darken-4">View the code</a></p>
+            </div>
+            <div class="card-reveal"><span class="card-title activator grey-text text-darken-4">Motivational Quote Generator<i class="material-icons right">close</i>
+                <h4>Click the button to get a quote... and another one.</h4>
+                <p>Designed to randomly select a quote from an array of proven and effective motivational quotes.</p>
+                <div class="row">
+                  <div class="col s6">
+                    <h6>HTML</h6>
+                    <h6>CSS </h6>
+                    <h6>BootStrap</h6>
+                  </div>
+                  <div class="col s6">
+                    <h6>JavaSript</h6>
+                    <h6>jQuery</h6>
+                  </div>
+                </div></span></div>
+          </div>
+        </div>
       </div>
     </div>
-    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <footer id="contact" class="page-footer blue-grey">
+      <div class="container">
+        <div class="row">
+          <div class="col l6 s12">
+            <h5 class="white-text">Here's how you can reach me.</h5>
+            <p class="grey-text text-lighten-2">Feel free to contact me with any questions or feedback you have about this site. If you want to know more about how I got started coding, I am open to talk about it or point you in the right direction.</p>
+            <p class="grey-text text-lighten-2">If you are wanting to hire me, please send me an email and we can start a dialoge.</p>
+          </div>
+          <div class="col l4 offset-12 s12">
+            <h5 class="white-text">Contact </h5>
+            <ul>
+              <li class="btn-pad"><a href="mailto:matthewebdev@gmail.com" class="btn grey darken-4">Email<i class="material-icons right">email</i></a></li>
+              <li class="btn-pad"><a href="https://github.com/mrmatt1877" class="btn grey darken-4">GitHub<i class="material-icons right">code</i></a></li>
+              <li class="btn-pad"><a href="https://www.freecodecamp.com/mrmatt1877" class="btn grey darken-4">freeCodeCamp<i class="material-icons right">forum</i></a></li>
+              <li class="btn-pad"><a href="https://www.linkedin.com/in/matthewsrobertson" class="btn grey darken-4">LinkedIn<i class="material-icons right">person_pin</i></a></li>
+              <li class="btn-pad"><a href="img/Matthew Robertson.pdf" download class="btn grey darken-4">Resume<i class="material-icons right">work</i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <div class="container center-align">© 2016 Matthew Robertson</div>
+      </div>
+    </footer>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
     <script src="js/index.js"></script>
   </body>
 </html>

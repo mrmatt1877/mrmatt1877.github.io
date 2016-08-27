@@ -3,277 +3,449 @@ doctype html
 html
   head
     meta(charset="UTF-8")
-    title Portfolio
-    link(
-      href="https://fonts.googleapis.com/css?family=Lobster+Two"
-      rel="stylesheet"
-      )
     meta(
       name="viewport"
-      content="width=device-width, initial-scale=1"
+      content="width=device-width, initial-scale=1.0"
+      )
+    title Matthew Robertson
+    link(
+      type="text/css"
+      rel="stylesheet"
+      href="css/mat.css"
       )
     link(
-      href='https://fonts.googleapis.com/css?family=Reem+Kufi' 
-      rel='stylesheet' 
-      type='text/css'
-      )
-    link(
-      rel='stylesheet' 
-      href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css')
-    script(
-      src="https://use.fontawesome.com/933198aed6.js"
-    )
-    link(
+      type="text/css"
       rel="stylesheet"
       href="css/style.css"
       )
-  body#grad.container
-    nav.navbar.navbar-inverse.navbar-fixed-top
-      div.container-fluid
-        div.navbar-header
-          a.navbar-brand(href="https://www.dropbox.com/s/ztolzgk26f532lc/Resume.pdf?dl=0") Matthew Robertson
-          button(
-                 type="button" 
-                 class="navbar-toggle collapsed" 
-                 data-toggle="collapse" 
-                 data-target="#myNavbar"
-                 )
-            span.sr-only Toggle navigation
-            span.icon-bar
-            span.icon-bar
-            span.icon-bar
-        div.navbar-collapse.collapse#myNavbar
-          ul.nav.navbar-nav.navbar-right
-            li.active
-              a(href="#info") About
-            li.nav-item
+    link(
+      href="http://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+      )
+  body
+    //-
+      navbar
+    div.navbar-fixed
+      nav.blue-grey
+        div.nav-wrapper
+          a(href="#" class="brand-logo" id="resume") Matthew Robertson
+          a(href="#" data-activates="mobile-demo" class="button-collapse")
+            i.material-icons menu
+          ul.right.hide-on-med-and-down
+            li
+              a(href="#about") About
+            li
               a(href="#skills") Skills
-            li.nav-item
-              a(href="#examples") Examples
-            li.nav-item
+            li
+              a(href="#my-work") My Work
+            li
               a(href="#contact") Contact
-              
-    div#splash.splash-background
-      div#animate.col-md-12
-        img(
-          id="old-school"
-          class="img-responsive center-block"
-          src="https://dl.dropboxusercontent.com/s/pz9mvyet6docnmu/finished-logo-trimmed.gif?dl=0"
-          alt="Matthew Robertson Old School Logo"
-        )
+          ul(class="side-nav" id="mobile-demo")
+            li
+              a(href="#about") About
+            li
+              a(href="#skills") Skills
+            li
+              a(href="#my-work") My Work
+            li
+              a(href="#contact") Contact
+      //-
+        hero image
+    div#hero-img
+      img(src="img/logo-bg.svg")
+      
+    div.container
+    
+      div#about
+        h1.hide-on-small-only.center-align.section About Me
+        h3.hide-on-med-and-up.center-align.section About Me
+        div.divider
         
-    div#content
-      div#info.row
-        h2 About Me
-        div.horizontal
-          hr
-        div.col-md-6.col-xs-12.text-center
-          img(
-              class="img-responsive center-block lake-picture"
-              src="https://dl.dropboxusercontent.com/s/58t0em2va5ta0lx/1831.JPG?dl=0"
-              alt="Matthew Robertson at the Lake"
-              height=300
-          )
-        div.col-md-6.col-xs-12.text-pad
-          div.info-text.text-center
-            p I am a front end web developer based in North Carolina. I have been developing websites for a little under a year now. I have built several personal projects such as a connect four game and Wikipedia viewer, but you can check out those and more below. I am currently searching for employment in the area. 
-            p A little about me, when I started my post high school education I began studying as a graphic designer but due to a lack of course offerings, and being young and naive about what my options were, I switched majors to psychology. I graduated in 2012 from the University of North Carolina at Greensboro with my Bachelor of Arts degree. Up until this point I held full and part time employment in a few different tech based jobs, from sales to telecommunication support. I still work for a local electronics repair shop part time despite working for a mental health agency full time. I have always been drawn towards technology this way, but despite knowing how to tear down, fix, and build most modern electronics I had only dabbled in the software side of things.
-            p So, during a lull on one of the holiday breaks, when the clients I work with were on vacation, I decided to learn how to code. See, I am a self taught web developer. I used many different resources during my education including my local bookshop, the public library, and online resources such as freeCodeCamp.  I am still learning everyday and have no problem sitting down to learn a new language, or most commonly jumping in and pushing through it until everything starts to click.
-            p My goals for the future are to become competent in backend languages and possibly to identify myself as a full stack web developer. Currently I am looking for employment as a front end developer with the hope of starting a career and furthering my knowledge. If you have any questions or would like to hire me, you can contact me through email or social media with my info linked below.
-            p Thanks for checking out my portfolio, I look forward to hearing from you!
-        br
-
-
-      div#skills.container-fluid
-        h2 My Skills
-        hr
-        div.logos.row
-          div.html-logo.col-md-4.col-xs-4.logo-pad.img-responsive
-            img(  src="https://dl.dropboxusercontent.com/s/jambhozsjt7yqbi/HTML5_logo_and_wordmark.png?dl=0"
-                  alt="HTML logo"
-                  height="300")
-
-          div.css3-svg.col-md-4.col-xs-4.logo-pad.img-responsive
-            img(  src="https://dl.dropboxusercontent.com/s/ugr79n5ysaphk8l/CSS3_badge.png?dl=0"
-                  alt="CSS3 logo"
-                  height="300")
-
-          div.javscript-logo.col-md-4.col-xs-4.logo-pad.img-responsive
-            img(  src="https://dl.dropboxusercontent.com/s/yeymjlbzu536c3e/Javascript%20logo.png?dl=0" 
-                  alt="Javascript Logo" 
-                  height="300")
-
-        div.list-skills.row
-          div.frameworks.col-xs-15
-            h2 
-              span.break Frame
-              span.break works:
-            p BootStrap
-            p jQuery
-            p Jade
-            p Node.js  
-          div.col-xs-32
-              hr.vertical-line
-          div.languages.col-xs-15
-            h2 
-              span.break Lan
-              span.break guages:
-            p HTML
-            p CSS
-            p Javascript
-          div.col-xs-32
-            hr.vertical-line
-          div.tools.col-xs-15
-            h2 Tools:
-            p Git
-            p GitHub
-            p NPM
-            p Photoshop
-
-      div#examples.row
-        h2.text-center Portfolio
-        div.horizontal
-          hr
-
-        div.sample.col-md-4.col-sm-4.col-xs-12
-          div.container-fluid.sample-box
-            a(href="http://codepen.io/mrmatt1877/pen/aNvYbB")
-              div.screenshot
-                img(
-                    class="img-responsive"
-                    src="https://dl.dropboxusercontent.com/s/mt5hj1vdms83ha4/quote%20generator%20responsive.png?dl=0"
-                    alt="Motivational Quote Generator Screenshot")
-              div.description
-                h4
-                  strong Motivational Quote Generator
-                p Delivering motivational quotes that you can share.
-                p Developed using HTML, CSS, Javascript, jQuery
-
-        div.sample.col-md-4.col-sm-4.col-xs-12
-          div.container-fluid.sample-box
-            a(href="http://codepen.io/mrmatt1877/pen/oxwrRM")
-              div.screenshot
-                img(
-                    class="img-responsive"
-                    src="https://dl.dropboxusercontent.com/s/afh9j8ju8u803rz/Calculator%20responsive.png?dl=0"
-                    alt="Calculator Screenshot")
-              div.description
-                h4 
-                  strong Calculator
-                p A simple javascript calculator.
-                p Developed using HTML, CSS, Javascript, jQuery
-
-        div.sample.col-md-4.col-sm-4.col-xs-12
-          div.container-fluid.sample-box
-            a(href="http://codepen.io/mrmatt1877/pen/BKQVxa")
-              div.screenshot
-                img(
-                    class="img-responsive"
-                    src="https://dl.dropboxusercontent.com/s/zuhwzzc2jqhu94l/Wiki%20page%20repsonsive.png?dl=0"
-                    alt="Wikipedia Viewer Screenshot")
-              div.description
-                h4 
-                  strong Wikipedia Viewer
-                p A Stylish Wikipedia search page.
-                p Developed using HTML, CSS, Javascript, jQuery, wikipedia API
-
-        div.sample.col-md-4.col-sm-4.col-xs-12
-          div.container-fluid.sample-box
-            a(href="http://codepen.io/mrmatt1877/pen/PNBGNP")
-              div.screenshot
-                img(
-                    class="img-responsive"
-                    src="https://dl.dropboxusercontent.com/s/7actgw7i1te4x1y/connect%20four%20responsive.png?dl=0"
-                    alt="Connect Four Screenshot"         
-                    )
-              div.description
-                h4 
-                  strong Connect Four
-                p The classic game of Connect Four.
-                p Developed using HTML, CSS, Javascript, jQuery
-
-        div.sample.col-md-4.col-sm-4.col-xs-12
-          div.container-fluid.sample-box
-            a(href="http://codepen.io/mrmatt1877/pen/YqjrOx")
-              div.screenshot
-                img(
-                    class="img-responsive"
-                    src="https://dl.dropboxusercontent.com/s/vvq9nmkd2pfbq3c/simon%20responsive.png?dl=0"
-                    alt="Simon Screenshot"          
-                  )
-              div.description
-                h4 
-                  strong Simon
-                p Follow the pattern in this game of Simon.
-                p Developed using HTML, CSS, Javascript, jQuery
-
-        div.sample.col-md-4.col-sm-4.col-xs-12
-          div.container-fluid.sample-box
-            a(href="http://codepen.io/mrmatt1877/pen/oxdbXg")
-              div.screenshot
-                img(
-                    class="img-responsive"
-                    src="https://dl.dropboxusercontent.com/s/xc2mt198n78656t/tic%20tac%20toe%20responsive.png?dl=0"
-                    alt="Tic Tac Toe Screenshot"
-                    )
-              div.description
-                h4 
-                  strong Tic Tac Toe
-                p Try to get three in a row.
-                p Developed using HTML, CSS, Javascript, jQuery
-
-        div.sample.col-md-4.col-sm-4.col-xs-12.hide
-          div.container-fluid.sample-box
-            a(href="#")
-              div.screenshot
-                img(
-                    class="img-responsive"
-                    src="http://sharonkgilbert.com/wp-content/uploads/2015/12/Under-construction.png"
-                    alt="Screenshot"
-                    )
-              div.description
-                h4 Title
-                p What it does.
-                p Developed using...
-
-
-      div#contact
-        h2 Contact Me:
-        hr
+        div#tilt
+          h2.hide-on-small-only.blue-text.text-darken-3 Hi, My name is Matthew Robertson!
+          h4.hide-on-med-and-up.blue-text.text-darken-3 Hi, My name is Matthew Robertson!
+        div.section.center-align
+          p I am a front end web developer based in North Carolina. I have been developing on the web for about a year now. 
+          p I have built several personal projects such as a connect four game and Wikipedia viewer, but you can check out those and more below.
+          p A graduate of UNCG, my goals for the future are to further my front end and backend programming knowledge with the hopes of building a career.
+          br
+          img(src="img/uncg.png")#uncg-logo
+          p Thanks for checking out my portfolio, I look forward to hearing from you!
+    
+      div#skills.row
+        h1.hide-on-small-only.center-align.section My Skills
+        h3.hide-on-med-and-up.center-align.section My Skills
+        div.divider
+        div.card.row.hide-on-med-and-up
+          div.col.s6.center-align
+            div.col.s12
+              h6 HTML
+              div.amber-text.text-darken-4
+                i.tiny.material-icons.center-align stars
+                i.tiny.material-icons.center-align stars
+                i.tiny.material-icons.center-align stars
+                i.tiny.material-icons.center-align stars
+            div.col.s12
+              h6 CSS
+              div.amber-text.text-darken-4
+                i.tiny.material-icons.center-align stars
+                i.tiny.material-icons.center-align stars
+                i.tiny.material-icons.center-align stars
+                i.tiny.material-icons.center-align stars
+            div.col.s12
+              h6 JavaSript
+              div.amber-text.text-darken-4
+                i.tiny.material-icons.center-align stars
+                i.tiny.material-icons.center-align stars
+                i.tiny.material-icons.center-align stars
+            div.col.s12
+              h6 Jade
+              div.amber-text.text-darken-4
+                i.tiny.material-icons.center-align stars
+                i.tiny.material-icons.center-align stars
+                i.tiny.material-icons.center-align stars
+            div.col.s12
+              h6 Git
+              div.amber-text.text-darken-4
+                i.tiny.material-icons.center-align stars
+                i.tiny.material-icons.center-align stars
+                i.tiny.material-icons.center-align stars
+            div.col.s12
+              h6 Node.js
+              div.amber-text.text-darken-4
+                i.tiny.material-icons.center-align stars
+                i.tiny.material-icons.center-align stars
+            div.col.s12
+              h6 Photoshop
+              div.amber-text.text-darken-4
+                i.tiny.material-icons.center-align stars
+                i.tiny.material-icons.center-align stars
+          div.col.s6.center-align
+            div.col.s12
+              h6 jQuery
+              div.amber-text.text-darken-4
+                i.tiny.material-icons.center-align stars
+                i.tiny.material-icons.center-align stars
+                i.tiny.material-icons.center-align stars
+                i.tiny.material-icons.center-align stars
+            div.col.s12
+              h6 BootStrap
+              div.amber-text.text-darken-4
+                i.tiny.material-icons.center-align stars
+                i.tiny.material-icons.center-align stars
+                i.tiny.material-icons.center-align stars
+                i.tiny.material-icons.center-align stars
+            div.col.s12
+              h6 Sass
+              div.amber-text.text-darken-4
+                i.tiny.material-icons.center-align stars
+                i.tiny.material-icons.center-align stars
+                i.tiny.material-icons.center-align stars
+            div.col.s12
+              h6 Responsive Design
+              div.amber-text.text-darken-4
+                i.tiny.material-icons.center-align stars
+                i.tiny.material-icons.center-align stars
+                i.tiny.material-icons.center-align stars
+            div.col.s12
+              h6 GitHub
+              div.amber-text.text-darken-4
+                i.tiny.material-icons.center-align stars
+                i.tiny.material-icons.center-align stars
+                i.tiny.material-icons.center-align stars
+            div.col.s12
+              h6 Material Design
+              div.amber-text.text-darken-4
+                i.tiny.material-icons.center-align stars
+                i.tiny.material-icons.center-align stars
+            div.col.s12
+              h6 React
+              div.amber-text.text-darken-4
+                i.tiny.material-icons.center-align stars      
+      
+        div.hide-on-small-only
+          div.col.s12.m6              
+            table
+              tbody
+                tr
+                  td
+                    h5 HTML
+                  td.amber-text.text-darken-4
+                    i.small.material-icons stars
+                    i.small.material-icons stars
+                    i.small.material-icons stars
+                    i.small.material-icons stars
+                tr
+                  td 
+                    h5 CSS
+                  td.amber-text.text-darken-4
+                    i.small.material-icons stars
+                    i.small.material-icons stars
+                    i.small.material-icons stars
+                    i.small.material-icons stars
+                tr
+                  td 
+                    h5 JavaSript
+                  td.amber-text.text-darken-4
+                    i.small.material-icons stars
+                    i.small.material-icons stars
+                    i.small.material-icons stars
+                tr
+                  td 
+                    h5 Jade
+                  td.amber-text.text-darken-4
+                    i.small.material-icons stars
+                    i.small.material-icons stars
+                    i.small.material-icons stars
+                tr
+                  td 
+                    h5 Git
+                  td.amber-text.text-darken-4
+                    i.small.material-icons stars
+                    i.small.material-icons stars
+                    i.small.material-icons stars
+                tr
+                  td 
+                    h5 Node.js
+                  td.amber-text.text-darken-4
+                    i.small.material-icons stars
+                    i.small.material-icons stars
+                tr
+                  td 
+                    h5 Photoshop
+                  td.amber-text.text-darken-4
+                    i.small.material-icons stars
+                    i.small.material-icons stars
+          div.col.s12.m6
+            table
+              tbody
+                tr
+                  td 
+                    h5 jQuery
+                  td.amber-text.text-darken-4
+                    i.small.material-icons stars
+                    i.small.material-icons stars
+                    i.small.material-icons stars
+                    i.small.material-icons stars
+                tr
+                  td 
+                    h5 BootStrap
+                  td.amber-text.text-darken-4
+                    i.small.material-icons stars
+                    i.small.material-icons stars
+                    i.small.material-icons stars
+                    i.small.material-icons stars
+                tr
+                  td 
+                    h5 Sass
+                  td.amber-text.text-darken-4
+                    i.small.material-icons stars
+                    i.small.material-icons stars
+                    i.small.material-icons stars
+                tr
+                  td 
+                    h5 Responsive Design
+                  td.amber-text.text-darken-4
+                    i.small.material-icons stars
+                    i.small.material-icons stars
+                    i.small.material-icons stars
+                tr
+                  td 
+                    h5 GitHub
+                  td.amber-text.text-darken-4
+                    i.small.material-icons stars
+                    i.small.material-icons stars
+                    i.small.material-icons stars
+                tr
+                  td 
+                    h5 Material Design
+                  td.amber-text.text-darken-4
+                    i.small.material-icons stars
+                    i.small.material-icons stars
+                tr
+                  td 
+                    h5 React
+                  td.amber-text.text-darken-4
+                    i.small.material-icons stars
+              
+        //-
+          examples of work
+          
+      div#my-work.row
+        h1.hide-on-small-only.center-align.section What I've Made
+        h3.hide-on-med-and-up.center-align.section What I've Made
+        div.divider
+      
+        div.col.s12.m6
+          div.card
+            div.card-image.waves-effect.waves-block.waves-light
+              img(src="img/tic-tac-toe.png").activator
+            div.card-content
+              span.card-title.activator.grey-text.text-darken-4 Tic Tac Toe
+                i.material-icons.right more_vert
+              p
+                a(href="http://codepen.io/mrmatt1877/full/oxdbXg").blue-text.text-darken-4 View the code
+            div.card-reveal
+              span.card-title.activator.grey-text.text-darken-4 Tic Tac Toe
+                i.material-icons.right close
+                h4 Try to get three in a row, in this classic paper and pencil game.
+                p Designed to be defensive because not being able to win is no fun.
+                div.row
+                  div.col.s6
+                    h6 HTML
+                    h6 CSS 
+                    h6 BootStrap
+                  div.col.s6
+                    h6 JavaSript
+                    h6 jQuery
+                
+              
+        div.col.s12.m6
+          div.card
+            div.card-image.waves-effect.waves-block.waves-light
+              img(src="img/connect-four.png").activator
+            div.card-content
+              span.card-title.activator.grey-text.text-darken-4 Connect Four
+                i.material-icons.right more_vert
+              p
+                a(href="http://codepen.io/mrmatt1877/full/PNBGNP/").blue-text.text-darken-4 View the code
+            div.card-reveal
+              span.card-title.activator.grey-text.text-darken-4 Connect Four
+                i.material-icons.right close
+                h4 The classic board game.
+                p Designed with the color scheme of the original. Built to simulate that old school feel.
+                div.row
+                  div.col.s6
+                    h6 HTML
+                    h6 CSS 
+                    h6 BootStrap
+                  div.col.s6
+                    h6 JavaSript
+                    h6 jQuery
+              
+        div.col.s12.m6
+          div.card
+            div.card-image.waves-effect.waves-block.waves-light
+              img(src="img/simon.png").activator
+            div.card-content
+              span.card-title.activator.grey-text.text-darken-4 Simon
+                i.material-icons.right more_vert
+              p
+                a(href="http://codepen.io/mrmatt1877/full/YqjrOx").blue-text.text-darken-4 View the code
+            div.card-reveal
+              span.card-title.activator.grey-text.text-darken-4 Simon
+                i.material-icons.right close
+                h4 Can you keep up?
+                p Designed with a strict mode where if you miss a beat you fail and a casual mode.
+                div.row
+                  div.col.s6
+                    h6 HTML
+                    h6 CSS 
+                    h6 BootStrap
+                  div.col.s6
+                    h6 JavaSript
+                    h6 jQuery
+        
+        div.col.s12.m6
+          div.card
+            div.card-image.waves-effect.waves-block.waves-light
+              img(src="img/calculator.png").activator
+            div.card-content
+              span.card-title.activator.grey-text.text-darken-4 Calculator
+                i.material-icons.right more_vert
+              p
+                a(href="http://codepen.io/mrmatt1877/full/oxwrRM").blue-text.text-darken-4 View the code
+            div.card-reveal
+              span.card-title.activator.grey-text.text-darken-4 Calculator
+                i.material-icons.right close
+                h4 What else is there to explain?
+                p Designed to do simple computations.
+                div.row
+                  div.col.s6
+                    h6 HTML
+                    h6 CSS 
+                    h6 BootStrap
+                  div.col.s6
+                    h6 JavaSript
+                    h6 jQuery
+        
+        div.col.s12.m6
+          div.card
+            div.card-image.waves-effect.waves-block.waves-light
+              img(src="img/wiki-viewer.png").activator
+            div.card-content
+              span.card-title.activator.grey-text.text-darken-4 Wikipedia Viewer
+                i.material-icons.right more_vert
+              p
+                a(href="http://codepen.io/mrmatt1877/full/BKQVxa").blue-text.text-darken-4 View the code
+            div.card-reveal
+              span.card-title.activator.grey-text.text-darken-4 Wikipedia Viewer
+                i.material-icons.right close
+                h4 A better looking search page for Wikipedia.
+                p When the user inputs their data, a request is made to Wikipedia and the data is returned and beautified.
+                div.row
+                  div.col.s6
+                    h6 HTML
+                    h6 CSS 
+                    h6 BootStrap
+                    h6 Wikipedia api
+                  div.col.s6
+                    h6 JavaSript
+                    h6 jQuery
+                    h6 JSON
+                    h6 AJAX
+        
+        div.col.s12.m6
+          div.card
+            div.card-image.waves-effect.waves-block.waves-light
+              img(src="img/quote-generator.png").activator
+            div.card-content
+              span.card-title.activator.grey-text.text-darken-4 Motivational Quote Generator
+                i.material-icons.right more_vert
+              p
+                a(href="http://codepen.io/mrmatt1877/full/aNvYbB").blue-text.text-darken-4 View the code
+            div.card-reveal
+              span.card-title.activator.grey-text.text-darken-4 Motivational Quote Generator
+                i.material-icons.right close
+                h4 Click the button to get a quote... and another one.
+                p Designed to randomly select a quote from an array of proven and effective motivational quotes.
+                div.row
+                  div.col.s6
+                    h6 HTML
+                    h6 CSS 
+                    h6 BootStrap
+                  div.col.s6
+                    h6 JavaSript
+                    h6 jQuery
+                    
+    footer#contact.page-footer.blue-grey
+      div.container
         div.row
-          a(href="mailto:matthewebdev@gmail.com")
-            button.btn
-              i.fa.fa-envelope.fa-fw.fa-2x
-              br
-              span Email
-          a(href="https://github.com/mrmatt1877")    
-            button.btn
-              i.fa.fa-github.fa-fw.fa-2x
-              br
-              span GitHub
-          a(href="https://www.freecodecamp.com/mrmatt1877")    
-            button.btn
-              i.fa.fa-fire.fa-fw.fa-2x
-              br
-              span freeCodeCamp
-          a(href="https://www.linkedin.com/in/matthewsrobertson")  
-            button.btn
-              i.fa.fa-linkedin.fa-fw.fa-2x
-              br
-              span linkedIn
-
-      div.footer.text-center
-        h6 Coded by 
-          span.my-name Matthew Robertson
-    script(
-      src='https://code.jquery.com/jquery-2.2.4.min.js'
-    )
-    script(
-      src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js'
-    )
-    script(
-      src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js'
-    )
-    script(
-      src="js/index.js"
-    )
+          div.col.l6.s12
+            h5.white-text Here's how you can reach me.
+            p.grey-text.text-lighten-2 Feel free to contact me with any questions or feedback you have about this site. If you want to know more about how I got started coding, I am open to talk about it or point you in the right direction.
+            p.grey-text.text-lighten-2 If you are wanting to hire me, please send me an email and we can start a dialoge.
+          div.col.l4.offset-12.s12
+            h5.white-text Contact 
+            ul
+              li.btn-pad
+                a(href="mailto:matthewebdev@gmail.com").btn.grey.darken-4 Email
+                  i.material-icons.right email
+              li.btn-pad
+                a(href="https://github.com/mrmatt1877").btn.grey.darken-4 GitHub
+                  i.material-icons.right code
+              li.btn-pad
+                a(href="https://www.freecodecamp.com/mrmatt1877").btn.grey.darken-4 freeCodeCamp
+                  i.material-icons.right forum
+              li.btn-pad
+                a(href="https://www.linkedin.com/in/matthewsrobertson").btn.grey.darken-4 LinkedIn
+                  i.material-icons.right person_pin
+              li.btn-pad
+                a(href="img/Matthew Robertson.pdf" download).btn.grey.darken-4 Resume
+                  i.material-icons.right work
+      div.footer-copyright
+        div.container.center-align © 2016 Matthew Robertson
+            
+    script(type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js")
+    script(type="text/javascript" src="js/materialize.min.js")
+    script(src="js/index.js")
