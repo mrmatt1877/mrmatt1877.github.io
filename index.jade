@@ -309,15 +309,17 @@ html
             div.card-image.waves-effect.waves-block.waves-light
               img(src="img/photo-app.png").activator
             div.card-content
-              span.card-title.activator.grey-text.text-darken-4 Photo App(in progress)
+              span.card-title.activator.grey-text.text-darken-4 Photo App
                 i.material-icons.right more_vert
               p
                 a(href="https://github.com/mrmatt1877/photo-app").blue-text.text-darken-4 View the code    
             div.card-reveal
-              span.card-title.activator.grey-text.text-darken-4 Photo App(in progress)
+              span.card-title.activator.grey-text.text-darken-4 Photo App
                 i.material-icons.right close
-                h4 A photo storage service.
-                p Built with Ruby on Rails. Current working features: Creating and updating accounts and account verification by email. Upcoming features: purchasing a service plan and storing photos.
+                h4 A photo storage service that allows users to upload photos and store them for a one time fee.
+                p Built with Ruby on Rails. Creating an account by purchasing a service plan with stripe integration, account verification by email, and storing and 
+                  displaying user photos (Storing photos is currently working in development, Production environment is ready for integration with AWS S3 bucket for 
+                  photo storage but it hasn't been implemented yet).
                 p  
                   a(href="https://photo-this.herokuapp.com/").blue-text.text-darken-4 Check out the app
                 div.row
@@ -435,8 +437,7 @@ html
                   div.col.s6
                     h6 JavaSript
                     h6 jQuery
-                
-              
+                          
         div.col.s12.m6
           div.card
             div.card-image.waves-effect.waves-block.waves-light
