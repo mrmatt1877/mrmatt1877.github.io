@@ -71,6 +71,8 @@ html
           br
           img(src="img/uncg.png")#uncg-logo
           p Thanks for checking out my portfolio, I look forward to hearing from you!
+        //  
+          img(src="img/ps4controller2.png")#uncg-logo
     
       div#skills.row
         h1.hide-on-small-only.center-align.section My Skills
@@ -300,9 +302,54 @@ html
           examples of work
           
       div#my-work.row
-        h1.hide-on-small-only.center-align.section What I've Made
-        h3.hide-on-med-and-up.center-align.section What I've Made
+        h1.hide-on-small-only.center-align.section What I've been working on
+        h3.hide-on-med-and-up.center-align.section What I've been working on
         div.divider
+        
+        div.col.s12.m6
+          div.card
+            div.card-image.waves-effect.waves-block.waves-light
+              img(src="img/bubbaspalletworks.png").activator
+            div.card-content
+              span.card-title.activator.grey-text.text-darken-4 Bubba's Pallet Works
+                i.material-icons.right more_vert
+              p
+                a(href="https://github.com/mrmatt1877/palletworks").blue-text.text-darken-4 View the code    
+            div.card-reveal
+              span.card-title.activator.grey-text.text-darken-4 Bubba's Pallet Works
+                i.material-icons.right close
+                h4 A customer commissioned site built to show off new products.
+                p The client wanted a simple site to list products and give out contact information.
+                p  
+                  a(href="https://bubbaspalletworks.github.io/").blue-text.text-darken-4 Check out the app
+                div.row
+                  div.col.s6
+                    h6 Jade
+                    h6 HTML
+                    h6 CSS 
+                    h6 Materializecss
+        
+        div.col.s12.m6
+          div.card
+            div.card-image.waves-effect.waves-block.waves-light
+              img(src="img/snake.png").activator
+            div.card-content
+              span.card-title.activator.grey-text.text-darken-4 Snake
+                i.material-icons.right more_vert
+              p
+                a(href="https://github.com/mrmatt1877/SnakeJS").blue-text.text-darken-4 View the code    
+            div.card-reveal
+              span.card-title.activator.grey-text.text-darken-4 Snake
+                i.material-icons.right close
+                h4 A classic snake game.
+                p A combination of reading "Ready Player One" and wanting to learn HTML canvas lead to this creation.
+                p 
+                  a(href="public/snake.html").blue-text.text-darken-4 Check out the app
+                div.row
+                  div.col.s6
+                    h6 HTML
+                    h6 CSS
+                    h6 JavaSript
         
         div.col.s12.m6
           div.card
@@ -319,7 +366,7 @@ html
                 h4 A photo storage service that allows users to upload photos and store them for a one time fee.
                 p Built with Ruby on Rails. Creating an account by purchasing a service plan with stripe integration, account verification by email, and storing and 
                   displaying user photos (Storing photos is currently working in development, Production environment is ready for integration with AWS S3 bucket for 
-                  photo storage but it hasn't been implemented yet).
+                  photo storage but it hasn&apos;t been implemented yet).
                 p  
                   a(href="https://photo-this.herokuapp.com/").blue-text.text-darken-4 Check out the app
                 div.row
@@ -587,3 +634,5 @@ html
     script(type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js")
     script(type="text/javascript" src="js/materialize.min.js")
     script(src="js/index.js")
+    
+  <script type="text/javascript" src="http://localhost:35729/livereload.js"></script>
